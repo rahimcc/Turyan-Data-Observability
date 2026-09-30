@@ -15,6 +15,7 @@ services:
 
   marquez-api:
     image: ghcr.io/rahimcc/marquez-arm:latest
+    platform: linux/arm64
     depends_on:
       - marquez-db
     environment:
@@ -29,6 +30,7 @@ services:
 
   marquez-web:
     image: ghcr.io/rahimcc/marquez-web-arm:latest
+    platform: linux/arm64
     depends_on:
       - marquez-api
     environment:
