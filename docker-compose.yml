@@ -14,7 +14,7 @@ services:
       - marquez-db-data:/var/lib/postgresql/data
 
   marquez-api:
-    image: marquezproject/marquez:latest
+    image: ghcr.io/rahimcc/marquez-arm:latest
     depends_on:
       - marquez-db
     environment:
@@ -28,7 +28,7 @@ services:
       - "5556:5001"   # admin/healthcheck interface
 
   marquez-web:
-    image: marquezproject/marquez-web:latest
+    image: ghcr.io/rahimcc/marquez-web-arm:latest
     depends_on:
       - marquez-api
     environment:
