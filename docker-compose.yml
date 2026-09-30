@@ -38,7 +38,7 @@ services:
     ports:
       - "3333:3000"   # the UI
 
-  oauth2-proxy:
+    oauth2-proxy:
       image: quay.io/oauth2-proxy/oauth2-proxy:latest
       container_name: oauth2-proxy-${SERVICE_NAME}
       command: --http-address=0.0.0.0:4180
