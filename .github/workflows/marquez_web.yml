@@ -16,7 +16,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: MarquezProject/marquez
-          ref: main            # or pin to a specific tag, e.g. "0.50.0", for a reproducible build
+          ref: 0.50.0            # or pin to a specific tag, e.g. "0.50.0", for a reproducible build
           path: marquez-source
 
       - name: Set up QEMU
