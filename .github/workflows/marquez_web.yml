@@ -2,8 +2,6 @@ name: Build multi-arch Marquez Web image
 
 on:
   workflow_dispatch:
-  push:
-    branches: [main]
 
 jobs:
   build-and-push:
