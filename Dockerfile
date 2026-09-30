@@ -24,7 +24,7 @@ FROM eclipse-temurin:17-jre-jammy
 WORKDIR /usr/src/app
 
 COPY --from=build /usr/src/app/api/build/libs/marquez-*.jar marquez.jar
-COPY marquez.example.yml marquez.yml
+COPY marquez.yml marquez.yml
 
 EXPOSE 5000 5001
 
